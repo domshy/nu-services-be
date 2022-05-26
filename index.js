@@ -38,10 +38,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const db = mysql.createConnection({
-    user: "root",
-    host: "localhost",
-    password: "password",
-    database: "nugss"
+    user: process.env.DATABASE_USERNAME|| "root",
+    host: process.env.DATABASE_HOST || "localhost",
+    password: process.env.DATABASE_PASSWORD || "password",
+    database: process.env.DATABASE_NAME || "nugss"
 });
 
 
