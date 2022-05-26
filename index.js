@@ -29,7 +29,7 @@ const saltRounds = 10;
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({ origin: "https://nu-guidance-services.herokuapp.com/", credentials: true }))
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
