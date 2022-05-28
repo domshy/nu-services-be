@@ -483,7 +483,7 @@ app.post("/announcement/create", (req, res) => {
 
 
 //-------------------------------------------------------------------------------------//
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 4000;
 
 
 if (process.env.NODE_ENV === "production") {
